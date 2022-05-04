@@ -59,7 +59,7 @@ def handle_message(event):
     elif msg == '你是誰?':
         r = 'Uma超可愛'
     elif 'Uma' in msg:
-        r = '喵!你找我喵?'
+        r = ['喵!你找我喵?','Uma超可愛']
 
     line_bot_api.reply_message(
         event.reply_token,
